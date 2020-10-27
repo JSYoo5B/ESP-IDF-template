@@ -24,7 +24,7 @@ FIND_PROJECT_SRCS=`find ${PWD}/main	\
 
 cscope_files:
 	rm -f cscope.files
-	realpath -es --relative-to=. ./build/include/sdkconfig.h > cscope.files
+	realpath -es --relative-to=. ./build/config/sdkconfig.h > cscope.files
 	realpath -es --relative-to=. ${FIND_IDF_HEADERS} >> cscope.files
 	realpath -es --relative-to=. ${FIND_PROJECT_SRCS} >> cscope.files
 
