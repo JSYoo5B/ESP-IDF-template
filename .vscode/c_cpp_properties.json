@@ -4,25 +4,22 @@
             "name": "ESP32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${env:IDF_PATH}/components/**",
-                "${env:XTENSA_ESP32_ELF_BIN}/../include/**",
-                "${env:XTENSA_ESP32_ELF_BIN}/../sys-include/**"
+                "${workspaceFolder}/build/config/",
+                "${env:IDF_TOOLS_PATH}/tools/xtensa-esp32-elf/**",
+                "${env:IDF_PATH}/components/**"
             ],
-            "defines": [],
-            "compilerPath": "${env:XTENSA_ESP32_ELF_BIN}/xtensa-esp32-elf-gcc"
+            "defines": []
         },
         {
             "name": "ESP32S2",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${env:IDF_PATH}/components/**",
-                "${env:XTENSA_ESP32S2_ELF_BIN}/../include/**",
-                "${env:XTENSA_ESP32S2_ELF_BIN}/../sys-include/**"
+                "${workspaceFolder}/build/config/",
+                "${env:IDF_TOOLS_PATH}/tools/xtensa-esp32s2-elf/**",
+                "${env:IDF_PATH}/components/**"
             ],
-            "defines": [],
-            "compilerPath": "${env:XTENSA_ESP32S2_ELF_BIN}/xtensa-esp32s2-elf-gcc"
+            "defines": []
         }
     ],
     "version": 4
 }
-
