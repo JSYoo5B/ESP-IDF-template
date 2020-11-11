@@ -1,0 +1,4 @@
+ARG IDF_VER="v4.1"
+
+FROM espressif/idf:${IDF_VER}
+
