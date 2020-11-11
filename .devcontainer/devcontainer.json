@@ -1,9 +1,6 @@
 {
 	"name": "ESP32",
-	"build": {
-		"dockerfile": "DockerFile",
-		"args": { "IDF_VER": "v4.1" }
-	},
+	"image": "espressif/idf:v4.1",
 
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash"
@@ -13,4 +10,3 @@
 		"ms-vscode.cpptools"
 	]
 }
-
