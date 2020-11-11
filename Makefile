@@ -18,6 +18,10 @@ FIND_IDF_HEADERS=`find ${IDF_PATH}/components	\
 	-type f													\
 	-name "*.[h]"`
 
+FIND_CROSS_HEADERS=`find ${IDF_TOOLS_PATH}/tools	\
+	-type f	\
+	-name "*.[h]"`
+
 FIND_PROJECT_SRCS=`find ${PWD}/main	\
 	-type f							\
 	-name "*.[cChHsS]"`
@@ -25,6 +29,7 @@ FIND_PROJECT_SRCS=`find ${PWD}/main	\
 cscope_files:
 	rm -f cscope.files
 	realpath -es --relative-to=. ./build/config/sdkconfig.h > cscope.files
+	realpath -es --relative-to=. ${FIND_CROSS_HEADERS} >> cscope.files
 	realpath -es --relative-to=. ${FIND_IDF_HEADERS} >> cscope.files
 	realpath -es --relative-to=. ${FIND_PROJECT_SRCS} >> cscope.files
 
